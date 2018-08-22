@@ -1,0 +1,32 @@
+{
+  "name": "wigle2geojson",
+  "version": "1.0.0",
+  "description": "Convert WigleWifi format to GeoJSON",
+  "main": "./lib/wigle2geojson.js",
+  "scripts": {
+    "prepublish": "node_modules/babel-cli/bin/babel.js src --out-dir lib",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chieftl/wigle2geojson.git"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "keywords": [
+    "wigle",
+    "wiglewifi",
+    "geojson"
+  ],
+  "author": "Yuriy Ilkiv",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1"
+  }
+}
